@@ -45,10 +45,11 @@ class ASR_Post_Types {
 						'singular_name' => 'Рубрика',
 						'menu_name'     => 'Рубрики редиректов',
 					),
-					'show_ui'           => true,
-					'show_admin_column' => true,
-					'query_var'         => true,
-					'rewrite'           => array(
+					'show_ui'            => true,
+					'show_admin_column'  => true,
+					'query_var'          => true,
+					'publicly_queryable' => false,
+					'rewrite'            => array(
 						'slug'         => 'rc',
 						'with_front'   => true,
 						'hierarchical' => true,
