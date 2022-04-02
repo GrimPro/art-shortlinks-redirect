@@ -10,7 +10,6 @@ jQuery(function ($) {
                 redirect_val: redirect_link.val(),
                 redirect_id: redirect_link.attr('data-redirect-id'),
             },
-            dataType: 'json',
             beforeSend: function (xhr) {
                 redirect_link.attr('readonly', 'readonly').next().addClass('is-active');
             },
