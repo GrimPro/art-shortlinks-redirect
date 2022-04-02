@@ -77,7 +77,7 @@ class ASR_Admin {
 
 			if ( $redirect_url ) {
 
-				wp_redirect( $redirect_url, 301 ); // phpcs:ignore WordPress.Security.SafeRedirect
+				wp_redirect( $redirect_url, 302 ); // phpcs:ignore WordPress.Security.SafeRedirect
 
 				$count = (int) get_post_meta( get_the_ID(), 'redirect_count', true );
 
